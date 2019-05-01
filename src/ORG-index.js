@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ProductListing from "./productListing"
-
+import DishwasherListing from "./dishwasherListing"
+import DishWasherModel from "./dishwasherModel"
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import "./styles.css";
@@ -11,7 +11,8 @@ function App() {
 
 		// App routes
 		<BrowserRouter>
-			<Route exact path="/" component={ProductListing} />
+			<Route exact path="/" component={DishwasherListing} />
+			<Route path="/product" component={DishWasherModel} />
 		</BrowserRouter>
 
   );
